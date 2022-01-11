@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Timer from './Timer';
+import TimerButton from './TimerButton';
 
 function App() {
 
@@ -8,9 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Timer 
-          time={200}
+          time={1500}
+          timerStatus={0}
         />
-        <p>
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -20,7 +22,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
